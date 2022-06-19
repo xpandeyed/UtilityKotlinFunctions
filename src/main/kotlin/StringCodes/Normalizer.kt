@@ -1,5 +1,7 @@
 package StringCodes
 
+import java.util.*
+
 
 fun normalize(string: String): String{
     //remove leading and trailing spaces
@@ -10,6 +12,9 @@ fun normalize(string: String): String{
 
     //turn the first character capital
     result = result.replaceFirst(result[0], result[0].uppercaseChar())
+
+    //convert whole string to uppercase
+    result = result.uppercase(Locale.getDefault())
 
     return result
 }
