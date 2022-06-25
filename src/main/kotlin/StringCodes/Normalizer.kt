@@ -16,5 +16,9 @@ fun normalize(string: String): String{
     //convert whole string to uppercase
     result = result.uppercase(Locale.getDefault())
 
+    //split
+    println("Lal Bihari Pandey".split(' '))
+    println("".split(' '))
+
     return result
 }
