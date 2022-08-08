@@ -22,3 +22,6 @@ fun normalize(string: String): String{
 
     return result
 }
+fun checkString(){
+    println("".isBlank())
+}

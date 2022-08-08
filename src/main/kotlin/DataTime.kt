@@ -1,4 +1,5 @@
 import java.time.LocalDate
+import java.time.temporal.ChronoUnit
 
 fun dateTime(){
     val month = LocalDate.now().month.toString()
@@ -15,5 +16,23 @@ fun dateTime(){
     val dayOfTheWeek = LocalDate.now().dayOfWeek
     println(dayOfTheWeek)
     val prevDay = LocalDate.now().minusDays(1).dayOfWeek
+    println(LocalDate.now())
+    var date = LocalDate.parse(LocalDate.now().toString())
+    println(date)
+    date = date.minusDays(2)
+    println(date)
+
+    val l1 = LocalDate
+        .parse("2018-12-06")
+
+    val l2 = LocalDate
+        .parse("2018-10-25")
+
+    val result = l1.until(
+        l2,
+        ChronoUnit.DAYS
+    )
+
+    println(result)
 
 }

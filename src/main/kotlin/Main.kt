@@ -1,5 +1,6 @@
+import StringCodes.checkString
 import StringCodes.normalize
 
 fun main(){
-    normalize("Temp")
+    normalize("l")
 }
